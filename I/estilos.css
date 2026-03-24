@@ -1,0 +1,642 @@
+/* Estilos Generales (Consistentes) */
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header,
+.footer {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    border-bottom: none;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.logo-placeholder {
+    font-weight: 600;
+    color: #555;
+    border: 1px dashed #ccc;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.main-image {
+    background-color: #e8f5e9;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.8em;
+    color: #17334B;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.8em;
+    color: #17334B;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #54BBAB;
+    padding-bottom: 8px;
+}
+
+h2 .subtitle {
+    font-weight: 400;
+    font-size: 0.7em;
+    color: #555;
+    display: block;
+    margin-top: 3px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 48%;
+    font-size: 0.95em;
+    border-left: 4px solid #ccc;
+}
+
+.info-box strong {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    color: #17334B;
+}
+
+.info-box.ciclo {
+    border-left-color: #11678B;
+}
+
+.info-box.tema {
+    border-left-color: #54BBAB;
+}
+
+.pregunta-guia {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-left: 5px solid #54BBAB;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.pregunta-guia strong {
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #17334B;
+    font-weight: 600;
+}
+
+.pregunta-guia em {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #1b5e20;
+    display: block;
+}
+
+.ebc-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px 2%;
+    margin-top: 10px;
+}
+
+.ebc-column {
+    width: 48%;
+    margin-bottom: 15px;
+}
+
+.ebc-column h3 {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 4px;
+}
+
+.ebc-mat h3 {
+    color: #D94D15;
+}
+
+.ebc-nat h3 {
+    color: #54BBAB;
+}
+
+.ebc-soc h3 {
+    color: #F39325;
+}
+
+.ebc-tec h3 {
+    color: #11678B;
+}
+
+.ebc-column ul {
+    list-style: none;
+    padding-left: 0;
+    font-weight: 300;
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+.ebc-column li {
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.ebc-column li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+}
+
+.habilidades-container {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.habilidades-container p {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.habilidad-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.habilidad-item strong {
+    font-weight: 600;
+    margin-right: 10px;
+    min-width: 180px;
+    display: flex;
+    align-items: center;
+    color: #17334B;
+}
+
+.habilidad-item span {
+    color: #333;
+}
+
+.icon.hab-colab {
+    background-color: #B01829;
+}
+
+.icon.hab-com {
+    background-color: #521537;
+}
+
+.icon.hab-creat {
+    background-color: #878721;
+}
+
+.icon.hab-pc {
+    background-color: #F39325;
+}
+
+.marco-teorico,
+.metodologia-container,
+.recursos-container,
+.temporalizacion-container,
+.evaluacion-container,
+.productos-container,
+.adaptaciones-container,
+.reflexion-container,
+.consideraciones-container {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.marco-teorico h3,
+.metodologia-container h3,
+.recursos-container h3,
+.temporalizacion-container h3,
+.evaluacion-container h3,
+.productos-container h3,
+.adaptaciones-container h3,
+.reflexion-container h3,
+.consideraciones-container h3 {
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #11678B;
+    margin-top: 20px;
+}
+
+.marco-teorico p,
+.metodologia-container p,
+.recursos-container p,
+.temporalizacion-container p,
+.evaluacion-container p,
+.productos-container p,
+.adaptaciones-container p,
+.reflexion-container p,
+.consideraciones-container p {
+    margin-bottom: 10px;
+}
+
+.marco-teorico ul,
+.metodologia-container ul,
+.recursos-container ul,
+.temporalizacion-container ul,
+.evaluacion-container ul,
+.productos-container ul,
+.adaptaciones-container ul,
+.reflexion-container ul,
+.consideraciones-container ul {
+    list-style: disc;
+    padding-left: 30px;
+    margin-top: 5px;
+    font-size: 0.95em;
+    font-weight: 300;
+}
+
+.marco-teorico ul li,
+.metodologia-container ul li,
+.recursos-container ul li,
+.temporalizacion-container ul li,
+.evaluacion-container ul li,
+.productos-container ul li,
+.adaptaciones-container ul li,
+.reflexion-container ul li,
+.consideraciones-container ul li {
+    margin-bottom: 5px;
+}
+
+/* Estilos específicos para algunas listas */
+.recursos-container ul,
+.temporalizacion-container ul,
+.productos-container ul,
+.adaptaciones-container ul,
+.consideraciones-container ul,
+.evaluacion-container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recursos-container li::before,
+.temporalizacion-container li::before,
+.productos-container li::before,
+.adaptaciones-container li::before,
+.consideraciones-container li::before,
+.evaluacion-container li::before {
+    content: '✓';
+    color: #54BBAB;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* Check verde */
+
+.diagrama-integracion-placeholder {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin: 15px 0;
+    border-radius: 5px;
+    border: 1px dashed #ccc;
+}
+
+.fase {
+    display: flex;
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.fase:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.fase-numero {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #11678B;
+    margin-right: 20px;
+    line-height: 1;
+    align-self: flex-start;
+    min-width: 30px;
+    text-align: center;
+}
+
+.fase-contenido h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    color: #17334B;
+}
+
+.fase-contenido p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.icon.fase-icon {
+    background-color: #cccccc;
+    margin-right: 10px;
+    color: #666;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 0.8em;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos Recursos Adicionales (Solo Videos) */
+.recursos-adicionales {
+    margin-top: 30px;
+}
+
+.recursos-adicionales h3 {
+    font-size: 1.2em;
+    color: #11678B;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.recursos-adicionales ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.recursos-adicionales li {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 4px;
+    border-left: 3px solid #c4302b;
+    /* Rojo YouTube */
+}
+
+.recursos-adicionales li strong {
+    display: block;
+    font-weight: 600;
+    color: #17334B;
+    margin-bottom: 3px;
+}
+
+.recursos-adicionales li span {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recursos-adicionales li a {
+    color: #c4302b;
+    text-decoration: none;
+    word-break: break-all;
+    font-size: 0.9em;
+}
+
+.recursos-adicionales li a:hover {
+    text-decoration: underline;
+}
+
+.icon.youtube {
+    background-color: #c4302b;
+}
+
+/* Rúbrica */
+.rubrica-container {
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.rubrica-container>p {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #555;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+
+.rubrica-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    margin-bottom: 20px;
+}
+
+.rubrica-tabla th,
+.rubrica-tabla td {
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.rubrica-tabla thead th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    color: #17334B;
+    text-align: center;
+}
+
+.rubrica-tabla tbody td:first-child {
+    font-weight: 500;
+    background-color: #f9f9f9;
+    width: 20%;
+}
+
+.rubrica-tabla tbody td:nth-child(2) {
+    background-color: #ffebee;
+}
+
+.rubrica-tabla tbody td:nth-child(3) {
+    background-color: #fffde7;
+}
+
+.rubrica-tabla tbody td:nth-child(4) {
+    background-color: #e8f5e9;
+}
+
+.rubrica-tabla tbody td:nth-child(5) {
+    background-color: #e3f2fd;
+}
+
+.valoracion-general {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.valoracion-general h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #17334B;
+}
+
+.valoracion-general ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.valoracion-general li {
+    margin-bottom: 3px;
+}
+
+.valoracion-general strong {
+    font-weight: 600;
+}
+
+/* Íconos (Placeholders) */
+.icon {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.icon.ciclo {
+    background-color: #11678B;
+}
+
+.icon.tema {
+    background-color: #54BBAB;
+}
+
+/* Verde */
+.icon.pregunta {
+    background-color: #54BBAB;
+}
+
+.icon.mat {
+    background-color: #D94D15;
+}
+
+.icon.nat {
+    background-color: #54BBAB;
+}
+
+.icon.soc {
+    background-color: #F39325;
+}
+
+.icon.tec {
+    background-color: #11678B;
+}
+
+.icon.recursos {
+    background-color: #F39325;
+}
+
+.icon.tiempo {
+    background-color: #521537;
+}
+
+.icon.evaluacion {
+    background-color: #B01829;
+}
+
+.icon.producto {
+    background-color: #878721;
+}
+
+.icon.adaptacion {
+    background-color: #D94D15;
+}
+
+.icon.reflexion {
+    background-color: #11678B;
+}
+
+.icon.consideracion {
+    background-color: #54BBAB;
+}
